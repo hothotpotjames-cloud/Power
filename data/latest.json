@@ -1,0 +1,23 @@
+{
+  "updatedAt": "2026-07-06 20:00:00",
+  "message": "当前为初始静态版本。GitHub Actions 启用后，将每天北京时间 08:30 和 15:30 自动更新。",
+  "pageUrl": "",
+  "manualRunUrl": "",
+  "sources": [
+    {
+      "name": "中国气象局：7月气候趋势及台风预测",
+      "url": "https://www.cma.gov.cn/2011xwzx/2011xmtjj/202607/t20260702_7898375.html",
+      "status": "pending"
+    },
+    {
+      "name": "中央气象台台风网",
+      "url": "https://typhoon.nmc.cn/web.html",
+      "status": "pending"
+    },
+    {
+      "name": "中国天气网：南京天气预报",
+      "url": "https://www.weather.com.cn/weather/101190101.shtml",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+name: Update Jiangsu Power Weather Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions cron uses UTC. Beijing time = UTC + 8.
+    # 08:30 Beijing time
+    - cron: "30 0 * * *"
+    # 15:30 Beijing time
+    - cron: "30 7 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update dashboard data
+        run: python scripts/update_dashboard.py
+
+      - name: Commit updated dashboard
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Jiangsu weather dashboard"
+          file_pattern: "index.html data/latest.json"
