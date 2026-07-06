@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-06 21:58:43",
-  "message": "GitHub Actions 已于北京时间 2026-07-06 21:58:43 完成更新；权威气象源检查 8/8 个可访问。后续可在脚本中继续接入结构化天气解析和电价预测重算。",
+  "updatedAt": "2026-07-06 22:02:26",
+  "message": "GitHub Actions 已于北京时间 2026-07-06 22:02:26 完成更新；权威气象源检查 8/8 个可访问。后续可在脚本中继续接入结构化天气解析和电价预测重算。",
   "pageUrl": "https://hothotpotjames-cloud.github.io/Power/",
   "manualRunUrl": "https://github.com/hothotpotjames-cloud/Power/actions/workflows/update-dashboard.yml",
   "sources": [
@@ -10,7 +10,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中国气象局：7月有2～3个台风登陆或影响我国沿海地区-中国气象局政府门户网站",
-      "checkedAt": "2026-07-06 21:58:44"
+      "checkedAt": "2026-07-06 22:02:31"
     },
     {
       "name": "中国气象局2026年7月新闻发布会",
@@ -18,7 +18,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中国气象局2026年7月新闻发布会-中国气象局政府门户网站",
-      "checkedAt": "2026-07-06 21:58:45"
+      "checkedAt": "2026-07-06 22:02:32"
     },
     {
       "name": "中央气象台台风网",
@@ -26,7 +26,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中央气象台台风网",
-      "checkedAt": "2026-07-06 21:58:47"
+      "checkedAt": "2026-07-06 22:02:34"
     },
     {
       "name": "南京7天天气预报",
@@ -34,7 +34,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "南京天气预报,南京7天天气预报,南京15天天气预报,南京天气查询",
-      "checkedAt": "2026-07-06 21:58:49"
+      "checkedAt": "2026-07-06 22:02:36"
     },
     {
       "name": "南京8-15天天气预报",
@@ -42,7 +42,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "南京天气预报,南京7天天气预报,南京15天天气预报,南京天气查询",
-      "checkedAt": "2026-07-06 21:58:50"
+      "checkedAt": "2026-07-06 22:02:37"
     },
     {
       "name": "苏州8-15天天气预报",
@@ -50,7 +50,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "苏州天气预报,苏州7天天气预报,苏州15天天气预报,苏州天气查询",
-      "checkedAt": "2026-07-06 21:58:52"
+      "checkedAt": "2026-07-06 22:02:39"
     },
     {
       "name": "徐州8-15天天气预报",
@@ -58,7 +58,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "徐州天气预报,徐州7天天气预报,徐州15天天气预报,徐州天气查询",
-      "checkedAt": "2026-07-06 21:58:53"
+      "checkedAt": "2026-07-06 22:02:40"
     },
     {
       "name": "连云港8-15天天气预报",
@@ -66,7 +66,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "连云港天气预报,连云港7天天气预报,连云港15天天气预报,连云港天气查询",
-      "checkedAt": "2026-07-06 21:58:54"
+      "checkedAt": "2026-07-06 22:02:41"
     }
   ],
   "forecastPolicy": {
