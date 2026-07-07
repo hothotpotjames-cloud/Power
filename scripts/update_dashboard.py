@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 DATA = ROOT / "data" / "latest.json"
 CHINA_TZ = timezone(timedelta(hours=8))
+DEFAULT_REPOSITORY = "hothotpotjames-cloud/Power"
 
 SOURCES = [
     ("中国气象局：7月气候趋势及台风预测", "https://www.cma.gov.cn/2011xwzx/2011xmtjj/202607/t20260702_7898375.html"),
@@ -31,7 +32,7 @@ def china_now():
 
 
 def github_pages_url():
-    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    repo = os.environ.get("GITHUB_REPOSITORY", DEFAULT_REPOSITORY)
     if "/" not in repo:
         return ""
     owner, name = repo.split("/", 1)
@@ -39,7 +40,7 @@ def github_pages_url():
 
 
 def manual_run_url():
-    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    repo = os.environ.get("GITHUB_REPOSITORY", DEFAULT_REPOSITORY)
     if not repo:
         return ""
     return f"https://github.com/{repo}/actions/workflows/update-dashboard.yml"
@@ -89,14 +90,14 @@ def main():
     page_url = github_pages_url()
     payload = {
         "updatedAt": updated_at,
-        "message": f"GitHub Actions 已于北京时间 {updated_at} 完成更新；权威气象源检查 {ok_count}/{len(source_results)} 个可访问。后续可在脚本中继续接入结构化天气解析和电价预测重算。",
+        "message": f"GitHub Actions 已于北京时间 {updated_at} 完成更新；权威气象源检查 {ok_count}/{len(source_results)} 个可访问。页面已纳入苏南/苏北降雨量、光照时长和光照强度展示；后续可在脚本中继续接入结构化天气解析和电价预测重算。",
         "pageUrl": page_url,
         "manualRunUrl": manual_run_url(),
         "sources": source_results,
         "forecastPolicy": {
-            "southJiangsu": "优先跟踪高温高湿、云量和沿江沿海风速，对峰段价格倾向做滚动修正。",
-            "northJiangsu": "优先跟踪强降雨、台风残余环流、沿海风电波动和局部阻塞风险。",
-            "spotPrice": "当前版本保留原有天气驱动预测框架；真实出清价数值化需要接入负荷、风光、机组可用率、外来电和市场报价数据。"
+            "southJiangsu": "优先跟踪高温高湿、降雨量、云量、光照时长/强度和沿江沿海风速，对峰段价格与光伏出力偏差做滚动修正。",
+            "northJiangsu": "优先跟踪强降雨、台风残余环流、光照衰减、沿海风电波动和局部阻塞风险。",
+            "spotPrice": "当前版本保留原有天气驱动预测框架，并用降雨量、光照时长/强度辅助判断空调负荷、光伏出力和午间价格弹性；真实出清价数值化需要接入负荷、风光、机组可用率、外来电和市场报价数据。"
         }
     }
     DATA.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
