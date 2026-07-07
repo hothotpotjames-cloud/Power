@@ -5,9 +5,9 @@ on:
   schedule:
     # GitHub Actions cron uses UTC. Beijing time = UTC + 8.
     # 08:30 Beijing time
-    - cron: "30 0 * * *"
+    - cron: "30,40,50 0 * * *"
     # 15:30 Beijing time
-    - cron: "30 7 * * *"
+    - cron: "30,40,50 7 * * *"
 
 permissions:
   contents: write
