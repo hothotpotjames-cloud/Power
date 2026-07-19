@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-18 19:18:38",
-  "message": "GitHub Actions 已于北京时间 2026-07-18 19:18:38 完成更新；权威气象源检查 8/8 个可访问；已自动重算未来 8 天苏南/苏北天气、降雨、光照和现货电价倾向。",
+  "updatedAt": "2026-07-19 16:57:39",
+  "message": "GitHub Actions 已于北京时间 2026-07-19 16:57:39 完成更新；权威气象源检查 8/8 个可访问；已自动重算未来 15 天苏南/苏北天气、降雨、光照和现货电价倾向。",
   "pageUrl": "https://hothotpotjames-cloud.github.io/Power/",
   "manualRunUrl": "https://github.com/hothotpotjames-cloud/Power/actions/workflows/update-dashboard.yml",
   "sources": [
@@ -10,7 +10,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中国气象局：7月有2～3个台风登陆或影响我国沿海地区-中国气象局政府门户网站",
-      "checkedAt": "2026-07-18 19:18:40",
+      "checkedAt": "2026-07-19 16:57:41",
       "finalUrl": "https://www.cma.gov.cn/2011xwzx/2011xmtjj/202607/t20260702_7898375.html"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中国气象局2026年7月新闻发布会-中国气象局政府门户网站",
-      "checkedAt": "2026-07-18 19:18:41",
+      "checkedAt": "2026-07-19 16:57:42",
       "finalUrl": "https://www.cma.gov.cn/2011zwxx/2011ztzgg/202606/t20260630_7891248.html"
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "中央气象台台风网",
-      "checkedAt": "2026-07-18 19:18:42",
+      "checkedAt": "2026-07-19 16:57:43",
       "finalUrl": "https://typhoon.nmc.cn/web.html"
     },
     {
@@ -37,7 +37,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "南京天气预报,南京7天天气预报,南京15天天气预报,南京天气查询",
-      "checkedAt": "2026-07-18 19:18:45",
+      "checkedAt": "2026-07-19 16:57:46",
       "finalUrl": "https://www.weather.com.cn/weather/101190101.shtml"
     },
     {
@@ -46,7 +46,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "南京天气预报,南京7天天气预报,南京15天天气预报,南京天气查询",
-      "checkedAt": "2026-07-18 19:18:46",
+      "checkedAt": "2026-07-19 16:57:47",
       "finalUrl": "https://www.weather.com.cn/weather15d/101190101.shtml"
     },
     {
@@ -55,7 +55,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "苏州天气预报,苏州7天天气预报,苏州15天天气预报,苏州天气查询",
-      "checkedAt": "2026-07-18 19:18:48",
+      "checkedAt": "2026-07-19 16:57:48",
       "finalUrl": "https://www.weather.com.cn/weather15d/101190401.shtml"
     },
     {
@@ -64,7 +64,7 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "徐州天气预报,徐州7天天气预报,徐州15天天气预报,徐州天气查询",
-      "checkedAt": "2026-07-18 19:18:50",
+      "checkedAt": "2026-07-19 16:57:50",
       "finalUrl": "https://www.weather.com.cn/weather15d/101190801.shtml"
     },
     {
@@ -73,12 +73,12 @@
       "status": "ok",
       "httpStatus": 200,
       "title": "连云港天气预报,连云港7天天气预报,连云港15天天气预报,连云港天气查询",
-      "checkedAt": "2026-07-18 19:18:51",
+      "checkedAt": "2026-07-19 16:57:51",
       "finalUrl": "https://www.weather.com.cn/weather15d/101191001.shtml"
     }
   ],
   "autoForecast": {
-    "days": 8,
+    "days": 15,
     "cities": {
       "southJiangsu": [
         [
